@@ -1,4 +1,5 @@
-function vocableContables(cadena) {
+function contarVocalesConsonantes() {
+    const cadena = document.getElementById("cadena").value;
     let numVocales = 0;
     let numConsonantes = 0;
 
@@ -11,10 +12,7 @@ function vocableContables(cadena) {
         }
     }
 
-    
-    console.log(`Número de vocales: ${numVocales}`);
-    console.log(`Número de consonantes: ${numConsonantes}`);
-
-   
+    const resultadoElement = document.getElementById("resultado");
+    resultadoElement.innerHTML = `Número de vocales: ${numVocales} <br> Número de consonantes: ${numConsonantes}`;
 }
-vocableContables("EL MURCIELAGO DE MI CASA, TIENE BATI SEÑAL");
+
